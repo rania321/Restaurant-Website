@@ -30,6 +30,9 @@ require_once "./../../Model/commandeM.php"; ?>
       if($select_orders->rowCount() > 0){
          while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
    ?>
+
+
+
    <div class="box">
       <p> placed on : <span><?= $fetch_orders['placed_on']; ?></span> </p>
       <p> name : <span><?= $fetch_orders['name']; ?></span> </p>
@@ -48,6 +51,7 @@ require_once "./../../Model/commandeM.php"; ?>
         <div class="flex-btn">
          <input type="submit" value="update" class="option-btn" name="update_payment">
          <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">delete</a>
+         
         </div>
       </form>
    </div>

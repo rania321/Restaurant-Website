@@ -83,7 +83,7 @@ section{
 }
 
 .btn{
-   background-color: var(--main-color);
+   background-color: var(--light-bg);
 }
 
 .option-btn{

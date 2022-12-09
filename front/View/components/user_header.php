@@ -80,7 +80,7 @@
           <a class="nav-link js-scroll-trigger" href="offres.html"><span>Offres</span></a>
         </li>
      
-          <a class="nav-link js-scroll-trigger" href="#pricing"><span>Pricing</span></a>
+          <a class="nav-link js-scroll-trigger" href="orders.php"><span>Mes commandes</span></a>
         </li>
      <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#blog"><span>Blog</span></a>

@@ -12,6 +12,7 @@ if(isset($_SESSION['user_id'])){
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +37,7 @@ if(isset($_SESSION['user_id'])){
    <h1 class="heading">placed orders</h1>
 
    <div class="box-container">
+   <button onclick="window.print()" value='PDF' class="btn btn-default btn-primary"  >  PDF </button>
 
    <?php
       if($user_id == ''){
@@ -46,6 +48,11 @@ if(isset($_SESSION['user_id'])){
          if($select_orders->rowCount() > 0){
             while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
    ?>
+
+
+
+
+
    <div class="box">
       <p>placed on : <span><?= $fetch_orders['placed_on']; ?></span></p>
       <p>name : <span><?= $fetch_orders['name']; ?></span></p>
@@ -56,7 +63,12 @@ if(isset($_SESSION['user_id'])){
       <p>your orders : <span><?= $fetch_orders['total_products']; ?></span></p>
       <p>total price : <span> TND <?= $fetch_orders['total_price']; ?>/-</span></p>
       <p> payment status : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; }; ?>"><?= $fetch_orders['payment_status']; ?></span> </p>
+      
    </div>
+
+   
+
+   
    <?php
       }
       }else{

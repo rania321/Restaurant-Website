@@ -37,6 +37,8 @@ include 'components/wishlist_cart.php';
 
    <h1 class="heading">Our Famous Pizzas</h1>
 
+   
+
    <div class="box-container">
 
    <?php

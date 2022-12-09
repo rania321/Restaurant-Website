@@ -95,6 +95,7 @@ if(isset($_POST['update_qty'])){
       <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
    </div>
 
+   
 </section>
 
 

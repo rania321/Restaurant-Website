@@ -46,12 +46,14 @@ if(isset($_GET['delete'])){
 
 <?php include '../components/admin_header.php'; ?>
 
-<section class="search-form">
+
+
+ <section class="search-form">
    <form action="" method="post">
-      <input type="text" name="search_box" placeholder="search here..." maxlength="100" class="box" required>
-      <button type="submit" class="fas fa-search" name="search_btn"></button>
+      <input type="text" class="option-btn" name="search_box" placeholder="search here..." maxlength="100" class="box" required>
+      
    </form>
-</section>
+</section> 
 
 <section class="orders" style="padding-top: 0; min-height:100vh;">
 
